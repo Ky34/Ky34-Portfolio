@@ -35,11 +35,7 @@ body {
 }
 
 .profile {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
   max-width: 654px;
-  /* width: auto; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -212,7 +208,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 52px;
-  
 }
 
 .tabs-content img {
