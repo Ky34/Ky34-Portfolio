@@ -1,7 +1,13 @@
+@media (max-width: 1000px) {
+  .modal-window {
+    font-size: 20px;
+    padding: 4rem;
+  }
+}
+
 /* для экранов с шириной ДО 800p */
 
 @media (max-width: 800px) {
-  
   .theme-btn {
     max-width: 60px;
     max-height: 60px;
@@ -17,7 +23,8 @@
     justify-content: center;
   }
 
-  .profile-btn-download, .profile-btn-contact {
+  .profile-btn-download,
+  .profile-btn-contact {
     width: 200px;
     height: 70px;
   }
@@ -30,11 +37,11 @@
     padding-top: 18px;
   }
 
-  .tabs-btn {
+  .tabs-btns {
     padding: 15px 30px;
   }
 
-  .tabs-btn-skills, .tabs-btn-portfolio {
+  .tabs-btn {
     width: 310px;
   }
 
@@ -45,8 +52,9 @@
     margin: auto;
     padding-bottom: 0;
   }
-  
+
   .tabs-content img {
+    max-width: 450px;
     height: 350px;
   }
 
@@ -54,12 +62,21 @@
     padding: 20px 40px 40px;
     margin: 0;
   }
+
+  .close-modal-window {
+    top: 0.1rem;
+    right: 0.5rem;
+  }
+
+  .modal-window {
+    font-size: 18px;
+    padding: 2.5rem;
+  }
 }
 
 /* для экранов с шириной ДО 650p */
 
 @media (max-width: 650px) {
-
   .header {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -103,7 +120,7 @@
     margin-bottom: 40px;
   }
 
-  .profile-img-avatar{
+  .profile-img-avatar {
     width: 107px;
     height: 107px;
     margin-top: 9px;
@@ -134,8 +151,8 @@
 
   .profile-social img {
     column-gap: 26px;
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
   }
 
   .profile-facts {
@@ -159,7 +176,8 @@
     gap: 14px;
   }
 
-  .profile-btn-download, .profile-btn-contact {
+  .profile-btn-download,
+  .profile-btn-contact {
     width: 155px;
     height: 44px;
   }
@@ -179,21 +197,29 @@
     padding-top: 13px;
   }
 
-  .tabs-btn {
+  .tabs-btns {
     padding: 10px 22.5px;
     margin-bottom: 40px;
     height: 84px;
   }
 
-  .tubs-btn-bg {
+  .tabs-btn-bg {
     height: 64px;
     border-radius: 10px;
   }
 
-  .tabs-btn-skills, .tabs-btn-portfolio {
+  .tabs-btn {
     width: 154px;
     height: 50px;
     border-radius: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+  }
+
+  .tabs-btn:active {
+    height: 46px;
   }
 
   .tabs-btn-text {
@@ -219,5 +245,14 @@
     line-height: 21px;
   }
 
+  .close-modal-window {
+    font-size: 2rem;
+    top: 0.1rem;
+    right: 0.5rem;
+  }
 
+  .modal-window {
+    font-size: 12px;
+    padding: 1.5rem;
+  }
 }
