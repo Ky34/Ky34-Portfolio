@@ -1,3 +1,4 @@
+
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
@@ -277,3 +278,284 @@ footer p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e9ebec;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.header {
+  margin-top: 33px;
+  margin-bottom: 65px;
+}
+
+.theme-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-btn:active {
+  width: 78px;
+  height: 78px;
+  margin-bottom: 67px;
+}
+
+.container {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile {
+  max-width: 654px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.profile-img {
+  width: 215px;
+  height: 215px;
+  background-image: url(./../img/avatar-bg.svg);
+}
+.profile-img-avatar {
+  display: block;
+  margin: auto;
+  margin-top: 11px;
+  border-radius: 50%;
+}
+
+.profile-info-personal {
+  margin-left: 40px;
+}
+
+.profile-info-personal span {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 69px;
+  color: #3d3d3d;
+}
+
+.profile-info-personal p {
+  margin-top: 3px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #575757;
+}
+
+.profile-social {
+  display: flex;
+  column-gap: 26px;
+  margin-top: 12px;
+}
+
+.profile-facts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 31px;
+  gap: 90px;
+}
+
+.profile-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  color: #575757;
+}
+
+.profile-fact span {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.profile-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+  margin-bottom: 86px;
+  gap: 38px;
+}
+
+.profile-btn a {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: -0.531474px;
+  color: #3d3d3d;
+}
+
+.profile-btn-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  gap: 15px;
+  width: 290px;
+  height: 80px;
+  background-color: #fbd144;
+}
+
+.profile-btn-download img {
+  width: 26.98px;
+  height: 24px;
+}
+
+.profile-btn-contact {
+  border-radius: 10px;
+  width: 290px;
+  height: 80px;
+  background-color: #fff;
+}
+
+.profile-btn-contact p {
+  padding-top: 24px;
+}
+
+.tabs-btns {
+  margin-bottom: 65px;
+}
+
+.tabs-btn-bg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 110px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.tabs-btn {
+  width: 350px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.500211px;
+  color: #19191b;
+}
+
+.tabs-btn-active {
+  background-color: #d7d7d7;
+}
+
+.tabs-btn:hover {
+  background-color: #9c9c9c;
+}
+
+.tabs-btn:active {
+  height: 77px;
+}
+
+.tabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 52px;
+}
+
+.tabs-content img {
+  border-radius: 15px;
+  max-width: 360px;
+  min-height: 270px;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-bottom: 48px;
+  transition: transform 0.2s ease-in;
+}
+
+.tabs-content img:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  display: block;
+  margin-top: 39px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #575757;
+}
+
+/* Modal window */
+
+.close-modal-window {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #575757;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+
+  background-color: #d7d7d7;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  color: #575757;
+  font-size: 22px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
