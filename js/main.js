@@ -11,7 +11,8 @@ const overlay = document.querySelector('.overlay');
 const btnDownload = document.querySelector('.profile-btn-download');
 const btnCloseModalWindow = document.querySelector('.close-modal-window');
 
-const showModalWindow = function () {
+const showModalWindow = function (e) {
+  e.preventDefault();
   modalWindow.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
