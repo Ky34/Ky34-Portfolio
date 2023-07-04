@@ -11,8 +11,8 @@ const overlay = document.querySelector('.overlay');
 const btnDownload = document.querySelector('.profile-btn-download');
 const btnCloseModalWindow = document.querySelector('.close-modal-window');
 
-const showModalWindow = function () {
-  //e.preventDefault();
+const showModalWindow = function (e) {
+  e.preventDefault();
   modalWindow.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
@@ -46,8 +46,8 @@ btnPortfolio.addEventListener('click', function () {
   tabsSkills.classList.add('hidden');
 });
 
-btnDownload.addEventListener('click', function () {
-  showModalWindow();
+btnDownload.addEventListener('click', function (e) {
+  showModalWindow(e);
   document.body.classList.add('no-scroll');
 });
 
